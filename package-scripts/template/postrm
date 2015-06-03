@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Perform necessary stackbuilder removal steps
+# after package is uninstalled.
+#
+
+echo "stackbuilder has been uninstalled!"
+
+exit 0
