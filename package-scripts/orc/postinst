@@ -1,5 +1,4 @@
 #!/bin/sh
 #
 
-ln -sf /opt/orc/bin/orc /usr/bin/orc # XXX overwrite orctool, remove once omnibus-orc replaced it
 ln -sf /opt/orc/bin/orc /usr/local/bin/orc
