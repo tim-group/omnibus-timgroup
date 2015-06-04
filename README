@@ -1,0 +1,10 @@
+this repo is used as a git submodule by all the defined projects, for more convenient jenkins builds.
+
+to bundle any project you must:
+ * chown /opt/$project_name to the user that runs the build
+
+to bundle "omnibus" itself you must:
+ * run: gem install omnibus
+ * uncomment "local_software_dirs" in omnibus.rb
+ * git clone "omnibus-software" to the "local_software_dirs" path
+ * run: /var/lib/gems/1.9.1/gems/omnibus-4.0.0/bin/omnibus build omnibus, i.e. not the /opt/omnibus one
