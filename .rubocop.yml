@@ -1,0 +1,21 @@
+---
+AllCops:
+  Exclude:
+    - 'build/**/*'
+    - 'pkg/**/*'
+
+Style/FileName:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Style/SingleSpaceBeforeFirstArg:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+# XXX ruby1.8 still used in ci-
+Style/HashSyntax:
+  Enabled: false

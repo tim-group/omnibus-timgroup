@@ -1,4 +1,4 @@
-#source 'https://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'omnibus', :git => 'http://git/git/github/chef/omnibus.git'
 gem 'omnibus-software', :git => 'http://git/git/github/chef/omnibus-software.git'

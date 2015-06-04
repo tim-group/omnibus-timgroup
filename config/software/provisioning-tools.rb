@@ -9,8 +9,6 @@ source git: "git@git:github/tim-group/provisioning-tools.git"
 relative_path "provisioning-tools"
 
 build do
-  env = with_standard_compiler_flags(with_embedded_path)
-
   command "rake omnibus"
   copy "build/omnibus/*", "#{install_dir}/"
 
