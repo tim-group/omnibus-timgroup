@@ -4,7 +4,8 @@ to bundle any project you must:
  * chown /opt/$project_name to the user that runs the build
 
 to bundle "omnibus" itself you must:
- * run: gem install omnibus
+ * run: gem install omnibus (this will overwrite /usr/local/bin/omnibus)
  * uncomment "local_software_dirs" in omnibus.rb
  * git clone "omnibus-software" to the "local_software_dirs" path
  * run: /var/lib/gems/1.9.1/gems/omnibus-4.0.0/bin/omnibus build omnibus, i.e. not the /opt/omnibus one
+ * optionally restore /usr/local/bin/omnibus to point back to /opt/omnibus/bin/omnibus
