@@ -1,0 +1,4 @@
+#!/bin/sh
+#
+
+ln -sf /opt/omnibus/bin/omnibus /usr/local/bin/omnibus

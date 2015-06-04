@@ -1,7 +1,6 @@
 #!/bin/sh
 #
 
-# XXX make paths consistent (orc uses /usr/bin/)
 ln -sf /opt/stackbuilder/bin/puppet_enc /usr/local/bin/puppet_enc
 
 # XXX install the stacks.rb puppet terminus, probably as /usr/local/lib/site_ruby/puppet/indirector/node/stacks.rb

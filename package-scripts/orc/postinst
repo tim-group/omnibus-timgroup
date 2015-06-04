@@ -1,4 +1,4 @@
 #!/bin/sh
 #
 
-ln -sf /opt/orc/bin/orc /usr/bin/orc
+ln -sf /opt/orc/bin/orc /usr/bin/orc # XXX use /usr/local/bin/
