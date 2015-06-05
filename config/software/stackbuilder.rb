@@ -6,7 +6,7 @@ dependency "ruby-web-test-framework"
 dependency "ruby-nagios-support"
 dependency "bundler"
 
-source git: "git@git:github/tim-group/stackbuilder.git"
+source git: "http://git/git/github/tim-group/stackbuilder.git"
 
 relative_path "stackbuilder"
 
