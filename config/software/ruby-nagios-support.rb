@@ -5,7 +5,7 @@ dependency "ruby"
 dependency "rubygems"
 dependency "bundler"
 
-source git: "git@git:github/tim-group/ruby-nagios-support.git"
+source git: "http://git/git/github/tim-group/ruby-nagios-support.git"
 
 relative_path "ruby-nagios-support"
 

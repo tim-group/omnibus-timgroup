@@ -5,7 +5,7 @@ dependency "ruby"
 dependency "rubygems"
 dependency "bundler"
 
-source git: "git@git:github/tim-group/ruby-web-test-framework.git"
+source git: "http://git/git/github/tim-group/ruby-web-test-framework.git"
 
 relative_path "ruby-web-test-framework"
 
