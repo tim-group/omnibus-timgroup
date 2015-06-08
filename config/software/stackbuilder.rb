@@ -16,6 +16,7 @@ build do
   gem "install puppet --version '3.7.5' --no-ri --no-rdoc", env: env
   gem "install mcollective-client --version '2.8.2' --no-ri --no-rdoc", env: env
   gem "install collimator --version '0.0.3' --no-ri --no-rdoc", env: env
+  gem "install git --version '1.2.9.1' --no-ri --no-rdoc", env: env # XXX orc
 
   command "rake omnibus"
   copy "build/omnibus/*", "#{install_dir}/"
