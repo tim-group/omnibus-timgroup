@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+
+rm /usr/local/bin/provision
+rm /usr/local/bin/dns
+
+( sleep 2; /etc/init.d/mcollective restart ) &
