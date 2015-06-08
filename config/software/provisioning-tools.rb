@@ -4,7 +4,7 @@ default_version "master"
 dependency "ruby"
 dependency "bundler"
 
-source git: "git@git:github/tim-group/provisioning-tools.git"
+source git: "http://git/git/github/tim-group/provisioning-tools.git"
 
 relative_path "provisioning-tools"
 
