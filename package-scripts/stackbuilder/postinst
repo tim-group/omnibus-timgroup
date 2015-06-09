@@ -3,3 +3,4 @@
 
 ln -sf /opt/stackbuilder/bin/puppet_enc /usr/local/bin/puppet_enc
 ln -sf /opt/stackbuilder/lib/ruby/site_ruby/puppet /usr/local/lib/site_ruby/puppet
+ln -sf /opt/stackbuilder/embedded/bin/rake /usr/local/bin/rake_stackbuilder
