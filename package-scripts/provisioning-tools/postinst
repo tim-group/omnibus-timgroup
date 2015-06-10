@@ -3,5 +3,6 @@
 
 ln -sf /opt/provisioning-tools/bin/provision /usr/local/bin/provision
 ln -sf /opt/provisioning-tools/bin/dns /usr/local/bin/dns
+ln -sf /opt/provisioning-tools/embedded/bin/rake /usr/local/bin/rake_provisioning-tools
 
 ( sleep 2; /etc/init.d/mcollective restart ) &

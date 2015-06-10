@@ -3,3 +3,4 @@
 
 rm /usr/local/bin/puppet_enc
 rm /usr/local/lib/site_ruby/puppet
+rm /usr/local/bin/rake_stackbuilder

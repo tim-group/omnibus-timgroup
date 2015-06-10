@@ -2,3 +2,4 @@
 #
 
 rm /usr/local/bin/orc
+rm /usr/local/bin/rake_orc

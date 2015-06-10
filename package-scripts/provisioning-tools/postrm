@@ -3,5 +3,6 @@
 
 rm /usr/local/bin/provision
 rm /usr/local/bin/dns
+rm /usr/local/bin/rake_provisioning-tools
 
 ( sleep 2; /etc/init.d/mcollective restart ) &

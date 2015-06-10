@@ -2,3 +2,4 @@
 #
 
 ln -sf /opt/orc/bin/orc /usr/local/bin/orc
+ln -sf /opt/orc/embedded/bin/rake /usr/local/bin/rake_orc
