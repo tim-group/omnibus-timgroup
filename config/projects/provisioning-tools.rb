@@ -9,7 +9,7 @@ install_dir     "/opt/provisioning-tools" # XXX as per above
 build_version   ENV['BUILD_NUMBER'] ? ('0.0.' + ENV['BUILD_NUMBER']) : '0.0.0'
 build_iteration 1
 
-override        :ruby, version: '2.1.6'
+override        :ruby, version: '1.9.3-p550'
 
 dependency      "preparation"
 dependency      "version-manifest"
