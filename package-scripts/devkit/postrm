@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+
+rm /usr/local/bin/ruby_devkit
+rm /usr/local/bin/rake_devkit
+rm /usr/local/bin/rubocop_devkit

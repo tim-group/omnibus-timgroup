@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+
+ln -sf /opt/devkit/embedded/bin/ruby /usr/local/bin/ruby_devkit
+ln -sf /opt/devkit/embedded/bin/rake /usr/local/bin/rake_devkit
+ln -sf /opt/devkit/embedded/bin/rubocop /usr/local/bin/rubocop_devkit
