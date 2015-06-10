@@ -1,7 +1,5 @@
-this repo is used as a git submodule by all the defined projects, for more convenient jenkins builds.
-
 to bundle any project you must:
- * chown /opt/$project_name to the user that runs the build
+ * mkdir and chown /opt/$project_name to the user that runs the build
 
 to bundle "omnibus" itself you must:
  * run: gem install omnibus (this will overwrite /usr/local/bin/omnibus)
@@ -11,3 +9,12 @@ to bundle "omnibus" itself you must:
  * run: /var/lib/gems/1.9.1/gems/omnibus-4.0.0/bin/omnibus build omnibus, i.e. not the /opt/omnibus one
  * use deb.sh to upload and promote the new .deb
  * optionally restore /usr/local/bin/omnibus to point back to /opt/omnibus/bin/omnibus
+alternatively use omnibus_devkit to build omnibus, and vice versa.
+
+to bundle "devkit" you must:
+ * install a separate 'omnibus' (not the devkit one)
+ * upload package with deb.sh
+ * promote package with deb.sh
+
+other info:
+ * you cannot run two builds at the same time
