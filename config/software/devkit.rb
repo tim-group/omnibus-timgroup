@@ -22,4 +22,9 @@ build do
   # decrease 'rake spec' runtime in stackbuilder by 12 seconds:
   command "sed -i 's/if svrs = IO.select(@listeners, nil, nil, 2.0)/if svrs = IO.select(@listeners, nil, nil, 0.01)/' "\
     "#{install_dir}/embedded/lib/ruby/2.1.0/webrick/server.rb"
+
+  link "#{install_dir}/embedded/bin/ruby", "#{install_dir}/bin/ruby"
+  link "#{install_dir}/embedded/bin/rake", "#{install_dir}/bin/rake"
+  link "#{install_dir}/embedded/bin/rubocop", "#{install_dir}/bin/rubocop"
+  link "#{install_dir}/embedded/bin/git", "#{install_dir}/bin/git"
 end

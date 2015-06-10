@@ -1,6 +1,8 @@
 #!/bin/sh
 #
 
-rm /usr/local/bin/ruby_devkit
-rm /usr/local/bin/rake_devkit
-rm /usr/local/bin/rubocop_devkit
+rm -f /usr/local/bin/ruby_devkit
+rm -f /usr/local/bin/rake_devkit
+rm -f /usr/local/bin/rubocop_devkit
+rm -f /usr/local/bin/omnibus_devkit
+rm -f /etc/profile.d/devkit.sh
