@@ -1,8 +1,10 @@
 #!/bin/sh
 #
 
-ln -sf /opt/devkit/embedded/bin/ruby /usr/local/bin/ruby_devkit
-ln -sf /opt/devkit/embedded/bin/rake /usr/local/bin/rake_devkit
-ln -sf /opt/devkit/embedded/bin/rubocop /usr/local/bin/rubocop_devkit
-ln -sf /opt/devkit/embedded/bin/omnibus /usr/local/bin/omnibus_devkit
+# XXX 11.06.15 these were installed in a previous version, remove after a while
+rm -f /usr/local/bin/ruby_devkit
+rm -f /usr/local/bin/rake_devkit
+rm -f /usr/local/bin/rubocop_devkit
+rm -f /usr/local/bin/omnibus_devkit
+# XXX end
 echo 'export PATH="$PATH:/opt/devkit/bin"' > /etc/profile.d/devkit-path.sh
