@@ -13,8 +13,8 @@ override        :ruby, version: '2.1.6'
 dependency      "preparation"
 dependency      "version-manifest"
 
-dependency      "omnibus"
 dependency      "devkit"
+dependency      "omnibus"
 
 exclude         "**/.git"
 exclude         "**/bundler/git"

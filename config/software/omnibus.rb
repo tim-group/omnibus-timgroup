@@ -12,7 +12,7 @@ relative_path "omnibus"
 build do
   env = with_standard_compiler_flags(with_embedded_path)
 
-  bundle "install", env: env
+  bundle "install --without development", env: env
 
   gem "build omnibus.gemspec", env: env
   gem "install omnibus*.gem --no-ri --no-rdoc", env: env
