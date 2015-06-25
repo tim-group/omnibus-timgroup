@@ -1,8 +1,8 @@
 #!/bin/sh
 #
 
-rm /usr/local/bin/provision
-rm /usr/local/bin/dns
-rm /usr/local/bin/rake_provisioning-tools
+rm -f /usr/local/bin/provision
+rm -f /usr/local/bin/dns
+rm -f /usr/local/bin/rake_provisioning-tools
 
 ( sleep 2; /etc/init.d/mcollective restart ) &

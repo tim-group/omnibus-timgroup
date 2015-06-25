@@ -1,5 +1,5 @@
 #!/bin/sh
 #
 
-rm /usr/local/bin/orc
-rm /usr/local/bin/rake_orc
+rm -f /usr/local/bin/orc
+rm -f /usr/local/bin/rake_orc

@@ -7,4 +7,4 @@ rm -f /usr/local/bin/rake_devkit
 rm -f /usr/local/bin/rubocop_devkit
 rm -f /usr/local/bin/omnibus_devkit
 # XXX end
-echo 'export PATH="$PATH:/opt/devkit/bin"' > /etc/profile.d/devkit-path.sh
+echo 'export PATH="/opt/devkit/bin:$PATH"' > /etc/profile.d/devkit-path.sh
