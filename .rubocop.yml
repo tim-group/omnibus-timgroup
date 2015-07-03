@@ -3,6 +3,7 @@ AllCops:
   Exclude:
     - 'build/**/*'
     - 'pkg/**/*'
+    - 'config/software/ncurses.rb'
 
 Style/FileName:
   Enabled: false
