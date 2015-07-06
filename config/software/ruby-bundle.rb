@@ -1,8 +1,7 @@
-name "devkit"
+name "ruby-bundle"
 
 dependency "ruby"
 dependency "bundler"
-dependency "git"
 
 dependency "ruby-web-test-framework"
 dependency "ruby-nagios-support"
@@ -27,5 +26,4 @@ build do
   link "#{install_dir}/embedded/bin/ruby", "#{install_dir}/bin/ruby"
   link "#{install_dir}/embedded/bin/rake", "#{install_dir}/bin/rake"
   link "#{install_dir}/embedded/bin/rubocop", "#{install_dir}/bin/rubocop"
-  link "#{install_dir}/embedded/bin/git", "#{install_dir}/bin/git"
 end

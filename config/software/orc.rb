@@ -19,6 +19,6 @@ build do
   copy "build/omnibus/*", "#{install_dir}/"
 
   # XXX for backwards compatibility with non-omnibus orc
-  command "sed -i 's,^#!/usr/bin/ruby,#!#{install_dir}/embedded/bin/ruby,' #{install_dir}/bin/orc"
+  command "sed -i 's,^#!.*ruby,#!#{install_dir}/embedded/bin/ruby,' #{install_dir}/bin/orc"
   command "sed -i 's,^.*/opt/orctool/lib.*$,# XXX deleted by omnibus,' #{install_dir}/bin/orc"
 end

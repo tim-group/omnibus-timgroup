@@ -1,19 +1,13 @@
-to bundle any project you must:
+to build any project you must:
  * mkdir and chown /opt/$project_name to the user that runs the build
 
-to bundle "omnibus" itself you must:
- * run: gem install omnibus (this will overwrite /usr/local/bin/omnibus)
- * uncomment "local_software_dirs" in omnibus.rb
- * increase 'build_iteration' in config/projects/omnibus.rb
- * git clone "omnibus-software" to the "local_software_dirs" path
- * run: /var/lib/gems/1.9.1/gems/omnibus-4.0.0/bin/omnibus build omnibus, i.e. not the /opt/omnibus one
- * use deb.sh to upload and promote the new .deb
- * optionally restore /usr/local/bin/omnibus to point back to /opt/omnibus/bin/omnibus
-alternatively use omnibus_devkit to build omnibus, and vice versa.
+to build "omnibus" itself you must:
+ * use /opt/omnibus2/bin/omnibus to build omnibus
+ * use /opt/omnibus/bin/omnibus to build omnibus2
 
-to bundle "devkit" you must:
- * install a separate 'omnibus' (not the devkit one)
- * upload package with deb.sh
+to build "ruby-bundle" you must:
+ * run omnibus build ruby-bundle
+ * upload package with deb.sh (it's in pkg/)
  * promote package with deb.sh
 
 other info:

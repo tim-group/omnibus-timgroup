@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+
+rm -f /etc/profile.d/devkit-path.sh # XXX 03.07.15
+
+echo 'export PATH="/opt/ruby-bundle/bin:$PATH"' > /etc/profile.d/ruby-bundle.sh
+echo 'export RUBYLIB="/usr/local/lib/site_ruby/timgroup:$RUBYLIB"' >> /etc/profile.d/ruby-bundle.sh

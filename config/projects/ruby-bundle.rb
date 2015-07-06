@@ -1,21 +1,19 @@
-name            "stackbuilder"
+name            "ruby-bundle"
 maintainer      "infra@timgroup.com"
 homepage        "https://github.com/tim-group"
-description     "stackbuilder"
-replace         "stacks" # XXX
+description     "ruby, gems and tools"
 
 install_dir     "/opt/#{name}"
 
-build_version   ENV['BUILD_NUMBER'] ? ('0.0.' + ENV['BUILD_NUMBER']) : '0.0.0'
+build_version   Omnibus::BuildVersion.semver
 build_iteration 1
 
 override        :ruby, version: '2.1.6'
-override        :ncurses, version: '5.9'
 
 dependency      "preparation"
 dependency      "version-manifest"
 
-dependency      "stackbuilder"
+dependency      "ruby-bundle"
 
 exclude         "**/.git"
 exclude         "**/bundler/git"
