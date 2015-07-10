@@ -1,0 +1,4 @@
+#!/bin/sh
+#
+
+ln -sf /opt/lita/embedded/bin/lita /usr/local/bin/lita
