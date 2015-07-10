@@ -14,4 +14,5 @@ build do
   gem "install lita-karma          --version '3.0.2' --no-ri --no-rdoc", env: env
   gem "install lita-directions     --version '1.0.2' --no-ri --no-rdoc", env: env
   gem "install lita-forecast       --version '0.1.7' --no-ri --no-rdoc", env: env
+  gem "install lita-boardgamegeek  --version '0.1.1' --no-ri --no-rdoc", env: env
 end
