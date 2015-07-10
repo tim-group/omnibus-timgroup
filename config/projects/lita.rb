@@ -11,6 +11,7 @@ build_iteration 1
 override        :ruby, version: '2.1.6'
 
 dependency      "lita"
+dependency      "lita-slack"
 
 exclude         "**/.git"
 exclude         "**/bundler/git"
