@@ -16,4 +16,5 @@ build do
   gem "install lita-forecast       --version '0.1.7' --no-ri --no-rdoc", env: env
   gem "install lita-boardgamegeek  --version '0.1.1' --no-ri --no-rdoc", env: env
   gem "install lita-cron           --version '0.0.3' --no-ri --no-rdoc", env: env
+  gem "install minitest            --version '5.7.0' --no-ri --no-rdoc", env: env # Required for lita-cron
 end
