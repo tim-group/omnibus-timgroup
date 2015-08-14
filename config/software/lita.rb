@@ -16,4 +16,6 @@ build do
   gem "install lita-forecast       --version '0.1.7' --no-ri --no-rdoc", env: env
   gem "install lita-boardgamegeek  --version '0.1.1' --no-ri --no-rdoc", env: env
   gem "install lita-ping           --version '1.1.1' --no-ri --no-rdoc", env: env
+
+  system("echo aaaa > #{install_dir}/test")
 end
