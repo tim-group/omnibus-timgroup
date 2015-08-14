@@ -1,6 +1,7 @@
 name "lita"
 
 dependency "ruby"
+dependency "bundler"
 
 build do
   env = with_standard_compiler_flags(with_embedded_path)

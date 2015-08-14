@@ -10,6 +10,9 @@ build_iteration 1
 
 override        :ruby, version: '2.1.6'
 
+dependency      "preparation"
+dependency      "version-manifest"
+
 dependency      "lita"
 
 exclude         "**/.git"
