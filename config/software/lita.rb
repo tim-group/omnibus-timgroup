@@ -12,5 +12,5 @@ relative_path "lita"
 build do
   env = with_standard_compiler_flags(with_embedded_path)
 
-  command "bundle install --path #{install_dir}"
+  command "bundle install --path #{install_dir}", env: env
 end
