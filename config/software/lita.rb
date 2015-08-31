@@ -1,16 +1,21 @@
 name "lita"
-default_version "master"
 
 dependency "ruby"
-dependency "bundler"
-dependency "git"
-
-source git: "http://git/git/lita.git"
-
-relative_path "lita"
 
 build do
   env = with_standard_compiler_flags(with_embedded_path)
 
-  command "bundle install --path #{install_dir}", env: env
+  gem "install lita                --no-ri --no-rdoc", env: env
+  gem "install lita-slack          --no-ri --no-rdoc", env: env
+  gem "install lita-jenkins        --no-ri --no-rdoc", env: env
+  gem "install lita-pagerduty      --no-ri --no-rdoc", env: env
+  # gem "install lita-nagios         --no-ri --no-rdoc", env: env
+  gem "install lita-sensu          --no-ri --no-rdoc", env: env
+  gem "install lita-karma          --no-ri --no-rdoc", env: env
+  gem "install lita-directions     --no-ri --no-rdoc", env: env
+  gem "install lita-forecast       --no-ri --no-rdoc", env: env
+  gem "install lita-boardgamegeek  --no-ri --no-rdoc", env: env
+  gem "install lita-ping           --no-ri --no-rdoc", env: env
+
+  system("echo aaaa > #{install_dir}/test")
 end
