@@ -17,5 +17,9 @@ build do
   gem "install lita-boardgamegeek  --no-ri --no-rdoc", env: env
   gem "install lita-ping           --no-ri --no-rdoc", env: env
 
+  gem "install minitest      --version 5.7.0  --no-ri --no-rdoc", env: env
+  gem "install activesupport --version 4.2.3  --no-ri --no-rdoc", env: env
+  gem "install eventmachine  --version 1.0.7  --no-ri --no-rdoc", env: env
+
   system("echo aaaa > #{install_dir}/test")
 end
