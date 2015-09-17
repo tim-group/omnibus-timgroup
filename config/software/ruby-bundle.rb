@@ -15,7 +15,8 @@ build do
   gem 'install fpm --version 1.3.3 --no-ri --no-rdoc', env: env
   gem 'install git --version 1.2.9.1 --no-ri --no-rdoc', env: env
   gem 'install mcollective-client --version 2.8.2 --no-ri --no-rdoc', env: env
-  gem 'install puppet --version 3.7.5 --no-ri --no-rdoc', env: env              # XXX not needed when 'exec' indirector used (sb)
+  gem 'install puppet --version 3.7.5 --no-ri --no-rdoc', env: env              # XXX won't be needed when 'exec'
+                                                                                # indirector used (sb)
   gem 'install rspec --version 3.3.0 --no-ri --no-rdoc', env: env
   gem 'install rubocop --version 0.32.1 --no-ri --no-rdoc', env: env
   gem 'install simplecov --version 0.10.0 --no-ri --no-rdoc', env: env
