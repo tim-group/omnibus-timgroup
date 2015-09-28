@@ -2,5 +2,4 @@
 #
 
 rm -f /etc/profile.d/devkit-path.sh # XXX 03.07.15
-
-echo 'export PATH="/opt/ruby-bundle/bin:$PATH"' > /etc/profile.d/ruby-bundle.sh
+rm -f /etc/profile.d/ruby-bundle.sh # XXX 28.09.15
