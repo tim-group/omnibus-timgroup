@@ -26,6 +26,7 @@ build do
   gem 'install rspec-puppet --version 2.2.0 --no-ri --no-rdoc', env: env        # puppet
   gem 'install net-ssh --version 2.9.2 --no-ri --no-rdoc', env: env             # deployapp
   gem 'install net-scp --version 1.2.1 --no-ri --no-rdoc', env: env             # deployapp
+  gem 'install open4 --version 1.3.4 --no-ri --no-rdoc', env: env               # mcollective-mysql-replication
 
   # decrease 'rake spec' runtime in stackbuilder by 12 seconds:
   command "sed -i 's/if svrs = IO.select(@listeners, nil, nil, 2.0)/if svrs = IO.select(@listeners, nil, nil, 0.01)/' "\
